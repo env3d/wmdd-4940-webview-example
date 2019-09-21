@@ -122,15 +122,8 @@ public class MainActivity extends AppCompatActivity {
                     return body.getBytes();
                 }
             };
-            Log.d(TAG, request.getBodyContentType());
-            requestQueue.add(request);
-        }
 
-        if (i.getExtras() != null) {
-            Set<String> keys = i.getExtras().keySet();
-            keys.stream().forEach(s -> {
-                Log.d(TAG, s);
-            });
+            requestQueue.add(request);
         }
     }
 
